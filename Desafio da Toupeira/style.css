@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+}
+.page img {
+  position: relative;
+}
+
+main {
+  grid-area: content;
+  width: 90%;
+  min-height: 100vh;
+  padding-top: 6.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main .buracos-wrapper {
+  display: grid;
+  gap: 10rem;
+  grid-template-areas:
+    'A B'
+    'C D'
+    'E F';
+}
+
+.buracos-wrapper .buracos:nth-child(1) {
+  grid-area: A;
+}
+
+.buracos-wrapper .buracos:nth-child(2) {
+  grid-area: B;
+}
+
+.buracos-wrapper .buracos:nth-child(3) {
+  grid-area: C;
+}
+
+.buracos-wrapper .buracos:nth-child(4) {
+  grid-area: D;
+}
+
+.buracos-wrapper .buracos:nth-child(5) {
+  grid-area: E;
+}
+
+.buracos-wrapper .buracos:nth-child(6) {
+  grid-area: F;
+}
+
+.buracos-wrapper .buracos img {
+  position: absolute;
+
+}
